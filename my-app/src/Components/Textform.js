@@ -1,12 +1,20 @@
-import React from 'react'
+import React ,{useState} from 'react'
 
-export default function Textform() {
+
+export default function Textform(props) {
+    const [text, setText] = useState('Enter The Text Here');
+    const textUpclass = ()=>{
+        console.log("Button Was Clicked")
+    }
     return (
         <div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"  ></textarea>
-                <label for="floatingTextarea2">Enter Your Text Here</label>
-            </div>
+            <form>
+                <h1>{props.heading}</h1>
+                <div class="my3">                    
+                    <textarea class="form-control" value={text} id="myBox" rows="8"></textarea>
+                </div>
+            </form>
         </div>
     )
 }
+
