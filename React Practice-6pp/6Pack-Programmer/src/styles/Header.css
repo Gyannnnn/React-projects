@@ -1,10 +1,19 @@
 nav{
-    background: black;
-    color: #fff;
-    height: 10vh;
-    width: 100%;
+    background-color: #fff;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vh;
+    box-shadow: 0 0 10px #000000da;
+}
+
+nav > a{
+    color: #000;
+    font-family: cursive;
+    font-size:1rem;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+
 }
